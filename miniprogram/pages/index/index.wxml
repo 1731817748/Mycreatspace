@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view><button bindtap="getData" type='primary'>无序查询</button></view> 
+<view><button bindtap="orderBy" type='primary'>分数DESC查询</button></view> 
+<view>
+  <view wx:for="{{score}}">      
+   <view>{{item.name}}</view> 
+   <view>{{item.score}}</view> 
+  </view>
+
+  <van-cell-group inset wx:for="{{score}}">
+  <van-cell title="{{item.name}}" value="{{item.score}}" />
+</van-cell-group>
+
+  <view wx:for="{{score1}}">      
+   <view>{{item.name}}</view> 
+   <view>{{item.score}}</view> 
+   
+  </view>
+  <view wx:for="{{score2}}">      
+   <view>{{item.name}}</view> 
+   <view>{{item.score}}</view> 
+   
+  </view>
+</view>
+
+
+<view class="container">
+
+  
+  <view class="environment" bindtap="onChangeShowEnvChoose">当前运行环境 env-l1-1gahx4d4763a2e16 {{ selectedEnv.alias }}</view>
+
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>

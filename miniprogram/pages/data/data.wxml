@@ -1,0 +1,18 @@
+<!--pages/data/data.wxml-->
+
+<view>
+ 
+  <van-cell-group inset wx:for="{{score}}">
+  <van-cell title="{{item.name}}" value="{{item.score}}" />
+</van-cell-group>
+<van-cell-group inset wx:for="{{score1}}">
+  <van-cell title="{{item.name}}" value="{{item.score}}" />
+</van-cell-group>
+<van-cell-group inset wx:for="{{score2}}">
+  <van-cell title="{{item.name}}" value="{{item.score}}" />
+</van-cell-group>
+
+  
+</view>
+
+

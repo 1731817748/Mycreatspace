@@ -1,0 +1,8 @@
+<!--pages/home/home.wxml-->
+<van-button square type="primary" block bind:click="navigateToAdd">更改数据</van-button>
+<van-button square type="info" plain block bind:click="navigateToIndex">数据列表</van-button>
+<van-button square type="primary" block bind:click="navigateToComplex">数据详情(施工中)</van-button>
+<!--<button class="btn" type="{{btnstate}}" bindtap="navigateToAdd">新增数据</button>
+<button class="btn" type="{{btnstate}}" bindtap="navigateToAdd">数据列表</button>
+<button class="btn" type="{{btnstate}}" bindtap="navigateToAdd">数据详情(施工中)</button>
+-->

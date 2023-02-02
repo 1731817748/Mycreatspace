@@ -1,0 +1,68 @@
+<!--pages/Single/SingleRecent.wxml-->
+<view class="content">
+  <view class="account">
+    <view class="title" >姓名查询</view>
+    <view class="number"><input bindinput="nameInput" placeholder="stuname" placeholder-style="color:#999999;"/></view>
+  </view>
+  <view class="hr"></view>
+</view>
+<view class="title" >姓名:</view>
+<view class="title" >{{name}}</view>
+<view class="hr"></view>
+  <button class="btn" disabled="{{disabled}}" type="{{btnstate}}" bindtap="ask">查询分数记录</button>
+  <van-swipe-cell right-width="{{ 120 }}" wx:for="{{newshabi}}">
+        <view data-id="{{_id}}">
+          <view>
+            <text>{{item.name}}</text>
+            <view class="hr"></view>
+            <text>{{item.date}}</text>
+            <view class="hr"></view>
+            <text>{{item.description}} </text>
+            <view class="hr"></view>
+          </view>
+        </view>
+      </van-swipe-cell>
+      <!--
+      <van-swipe-cell right-width="{{ 120 }}" wx:for="{{newdate}}">
+        <view data-id="{{_id}}">
+          <view>
+            <text>date: {{item.date}}</text>
+            <view class="hr"></view>
+          </view>
+        </view>
+      </van-swipe-cell>
+  <view class="hr"></view>
+
+  <wxs module="filter">
+  function parseDate(dateStr) {
+    if (!dateStr) {
+      return dateStr
+    }
+    var date = getDate(dateStr)
+    var year = date.getFullYear()
+    var month = date.getMonth() + 1
+    var day = date.getDate()
+    var hour = date.getHours()
+    var minute = date.getMinutes()
+    var second = date.getSeconds()
+    var formatNumber = function(n) {
+      n = n.toString()
+      if (n[1]) {
+        return n
+      } else {
+        return "0" + n[0]
+      }
+    }
+    return year + "-" + formatNumber(month) + "-" + formatNumber(day) + " " + formatNumber(hour) + ":" + formatNumber(minute) + ":" + formatNumber(second)
+  }
+  module.exports = {
+    parseDate: parseDate
+  }
+</wxs>
+
+ <view wx:for="{{newshabi}}" wx:key="_id">
+  <text>date: {{filter.parseDate(item.time)}}</text>
+</view>
+-->
+
+

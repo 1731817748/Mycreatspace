@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell",
+    
+  "van-cell-group": "@vant/weapp/cell-group",
+  "van-card": "@vant/weapp/card"
+  },
+  "onReachBottomDistance": 100,
+  "enablePullDownRefresh": true
+  
+}

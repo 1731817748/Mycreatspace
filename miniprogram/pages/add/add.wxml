@@ -1,0 +1,15 @@
+<!--pages/add/add.wxml-->
+<view class="content">
+  <view class="account">
+    <view class="title">account</view>
+    <view class="number"><input bindinput="accountInput" placeholder="userrrrrname" placeholder-style="color:#999999;"/></view>
+  </view>
+  <view class="hr"></view>
+  <view class="account">
+    <view class="title">passwd</view>
+    <view class="number"><input bindinput="pwdBlur" placeholder="please inpuuut passwd" password placeholder-style="color:#999999;"/></view>
+  </view>
+  <view class="hr"></view>
+  <button class="btn" disabled="{{disabled}}" type="{{btnstate}}" bindtap="login">login</button>
+ 
+</view>

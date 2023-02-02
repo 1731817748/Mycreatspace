@@ -1,0 +1,14 @@
+<!--pages/complex/complex.wxml-->
+<van-button type="default" block bind:click="navigateToInfo">分数变动记录</van-button>
+<van-button type="primary" block>11</van-button>
+<van-button type="info" block>45</van-button>
+<van-button type="warning" block>1</van-button>
+<van-button type="danger" block>4</van-button>
+
+<van-card
+  num="1"
+  price="20"
+  desc="买座位"
+  title="商品"
+  thumb="{{ imageURL }}"
+/>

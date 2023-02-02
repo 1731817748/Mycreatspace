@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/add/add",
+    "pages/complex/complex",
+    "pages/info/info",
+    "pages/AllRecent/AllRecent",
+    "pages/Single/SingleRecent",
+    "pages/addData/addData",
+    "pages/data/data"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "育才AP2025班级银行",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading" : "requiredComponents"
+}

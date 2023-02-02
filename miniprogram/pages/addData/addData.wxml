@@ -1,0 +1,38 @@
+<!--pages/addData/addData.wxml-->
+<view class="content">
+  <view class="account">
+    <view class="title" >姓名查询</view>
+    <view class="number"><input bindinput="nameInput" placeholder="stuname" placeholder-style="color:#999999;"/></view>
+  </view>
+<view class="hr"></view>
+</view>
+<view class="title" >姓名:</view>
+<view class="title" >{{name}}</view>
+<view class="hr"></view>
+  <button class="btn" disabled="{{disabled}}" type="{{btnstate}}" bindtap="ask">查询现在分数</button>
+  <view class="title" >现在时间:{{time}}</view>
+  <van-swipe-cell right-width="{{ 120 }}" wx:for="{{realscore}}" wx:key="score">
+        <view data-id="{{_id}}">
+          <view>
+            <text>{{item.name}}</text>
+            <view class="hr"></view>
+            <text>{{item.score}} </text>
+            <text>分</text>
+          </view>
+        </view>
+      </van-swipe-cell>
+
+
+  
+  <view class="hr"></view>
+  <view class="account">
+    <view class="title">更改后的score</view>
+    <view class="number"><input bindinput="scoreneww" placeholder="please inpuuut score" /></view>
+    <view class="hr"></view>
+    <view class="title">请输入本次更改的描述</view>
+    <view class="title"><input bindinput="script" placeholder="please inpuuut description" /></view>
+    <view class="hr"></view>
+  <button class="btn" disabled="{{disabled}}" type="{{btnstate}}" bindtap="check">更改并提交</button>
+  </view>
+
+

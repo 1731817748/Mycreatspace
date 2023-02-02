@@ -1,0 +1,10 @@
+<!--pages/info/info.wxml-->
+<van-button type="info" block bind:click="navigateToAll">所有记录</van-button>
+<van-button type="warning" block bind:click="navigateToSingle">精准查询</van-button>
+<van-button type="danger" block>未开发</van-button>
+<van-cell-group inset>
+  <van-cell title="单元格" value="内容" />
+  <van-cell title="单元格" value="内容" label="描述信息" />
+</van-cell-group>
+
+

@@ -1,4 +1,4 @@
-# Cloud Database for class grading
+# Cloud Database for class grading 见miniprogram分支 check the miniprogram branch
 
 基于微信云开发的计分小程序
 Miniprogram based on wechat cloud building
